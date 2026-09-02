@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { AboutUs } from './components/AboutUs';
-import { Events } from './components/Events';
+/*import { Events } from './components/Events';*/
 import { ContactFooter } from './components/ContactFooter';
 import { WatermelonSeedsBackground } from './components/ConfettiBackground';
 
