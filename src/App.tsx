@@ -4,15 +4,11 @@ import { Hero } from './components/Hero';
 import { AboutUs } from './components/AboutUs';
 import { Events } from './components/Events';
 import { ContactFooter } from './components/ContactFooter';
-import { ConfettiBackground } from './components/ConfettiBackground';
 
 export const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-canvas text-clayDark flex flex-col relative selection:bg-watermelon selection:text-white">
-      {/* Background Ambient Floating Watermelon Particles */}
-      <ConfettiBackground />
-
-      {/* Section 1: Sticky Floating Navigation Bar */}
+      {/* Section 1: Sticky Navigation Bar */}
       <Navbar />
 
       <main className="flex-grow">

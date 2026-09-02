@@ -1,177 +1,114 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Package, Calendar, Star, MapPin, Sparkles, Heart } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative pt-12 pb-20 md:pt-16 md:pb-28 overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section className="relative pt-16 pb-20 md:pt-20 md:pb-28">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Headlines Section: 2 Lines */}
+        {/* Headlines Section */}
         <div className="text-center max-w-3xl mx-auto">
-          {/* Fun watermelon pill badge */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 bg-watermelon-light border border-watermelon/20 text-watermelon font-bold text-xs sm:text-sm px-4 py-1.5 rounded-full mb-4 shadow-xs"
-          >
-            <span className="w-2 h-2 rounded-full bg-rind animate-pulse" />
-            <span>DIY Keramiek & Workshops in Duffel</span>
-          </motion.div>
-
           <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            transition={{ duration: 0.5 }}
             className="font-fredoka text-watermelon text-4xl sm:text-5xl md:text-6xl tracking-tight leading-tight"
           >
             Welkom bij karpouzi <span className="text-rind">keramiek</span>
           </motion.h1>
 
-          {/* Handwritten Slogan with Caveat & Squiggle */}
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative inline-block mt-3 mb-8"
+          {/* Slogan */}
+          <motion.p 
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+            className="font-caveat text-rind text-2xl sm:text-3xl md:text-4xl font-bold mt-4 mb-8"
           >
-            <p className="font-caveat text-rind text-2xl sm:text-3xl md:text-4xl font-bold px-4">
-              “Waar creativiteit en gezelligheid belangrijker zijn dan perfectie!”
-            </p>
-            {/* SVG Watermelon Wave Squiggle with Seed Accents */}
-            <svg 
-              className="w-full h-4 text-watermelon/50 mt-1" 
-              viewBox="0 0 300 16" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path 
-                d="M3 11C40 4 80 14 120 9C160 5 200 13 240 8C265 5.5 285 9.5 297 10" 
-                stroke="#F04C63" 
-                strokeWidth="3.5" 
-                strokeLinecap="round"
-              />
-              <circle cx="85" cy="5" r="1.8" fill="#1F2421" />
-              <circle cx="170" cy="12" r="1.8" fill="#1F2421" />
-              <circle cx="230" cy="4" r="1.8" fill="#1F2421" />
-            </svg>
-          </motion.div>
+            “Waar creativiteit en gezelligheid belangrijker zijn dan perfectie!”
+          </motion.p>
 
           {/* CTA Buttons */}
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10"
-          >
-            <motion.a
-              href="#contact"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-watermelon hover:bg-watermelon-hover text-white font-sans text-base sm:text-lg font-bold px-8 py-4 rounded-full shadow-lg shadow-watermelon/25 transition-all"
-            >
-              <Package className="w-5 h-5 text-sunshine" />
-              <span>Huur Jouw Karpouzi Box</span>
-            </motion.a>
-
-            <motion.a
-              href="#evenementen"
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.96 }}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-surface hover:bg-canvas text-clayDark font-sans text-base sm:text-lg font-semibold px-7 py-4 rounded-full border-2 border-rind/20 shadow-sm transition-all"
-            >
-              <Calendar className="w-5 h-5 text-rind" />
-              <span>Ontdek Workshops</span>
-            </motion.a>
-          </motion.div>
-
-          {/* Above-The-Fold Trust Micro-Badges (Vector Icons) */}
-          <motion.div 
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto"
+            transition={{ duration: 0.5, delay: 0.25 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10"
           >
-            <div className="flex items-center justify-center gap-2 bg-surface/80 backdrop-blur-sm px-3.5 py-2.5 rounded-2xl border border-clayDark/5 shadow-xs">
-              <Star className="w-4 h-4 text-sunshine fill-sunshine shrink-0" />
-              <span className="text-xs sm:text-sm font-semibold text-clayDark">5/5 Beoordelingen</span>
-            </div>
-            <div className="flex items-center justify-center gap-2 bg-surface/80 backdrop-blur-sm px-3.5 py-2.5 rounded-2xl border border-clayDark/5 shadow-xs">
-              <Package className="w-4 h-4 text-watermelon shrink-0" />
-              <span className="text-xs sm:text-sm font-semibold text-clayDark">Alles-in-1 Box</span>
-            </div>
-            <div className="flex items-center justify-center gap-2 bg-surface/80 backdrop-blur-sm px-3.5 py-2.5 rounded-2xl border border-clayDark/5 shadow-xs">
-              <MapPin className="w-4 h-4 text-rind shrink-0" />
-              <span className="text-xs sm:text-sm font-semibold text-clayDark">Ophalen in Duffel</span>
-            </div>
-            <div className="flex items-center justify-center gap-2 bg-surface/80 backdrop-blur-sm px-3.5 py-2.5 rounded-2xl border border-clayDark/5 shadow-xs">
-              <Sparkles className="w-4 h-4 text-blossom shrink-0" />
-              <span className="text-xs sm:text-sm font-semibold text-clayDark">Inclusief Afbakken</span>
-            </div>
+            <a
+              href="#contact"
+              className="w-full sm:w-auto inline-flex items-center justify-center bg-watermelon hover:bg-watermelon-hover text-white font-sans text-base font-semibold px-7 py-3.5 rounded-full transition-colors shadow-sm"
+            >
+              Huur een Box
+            </a>
+
+            <a
+              href="#evenementen"
+              className="w-full sm:w-auto inline-flex items-center justify-center bg-surface hover:bg-canvas text-clayDark font-sans text-base font-medium px-6 py-3.5 rounded-full border border-clayDark/10 transition-colors"
+            >
+              Bekijk Workshops
+            </a>
+          </motion.div>
+
+          {/* Minimalist Trust Features */}
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.35 }}
+            className="flex flex-wrap items-center justify-center gap-y-2 gap-x-6 text-xs sm:text-sm text-graphite font-medium"
+          >
+            <span>Ophalen in Duffel</span>
+            <span className="hidden sm:inline text-clayDark/20">•</span>
+            <span>Alles-in-1 DIY Box</span>
+            <span className="hidden sm:inline text-clayDark/20">•</span>
+            <span>Inclusief Professioneel Afbakken</span>
           </motion.div>
         </div>
 
-        {/* Hero Visual Banner Showcase */}
+        {/* Visual Banner Showcase */}
         <motion.div 
-          initial={{ opacity: 0, y: 35 }}
+          initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-14 relative"
+          transition={{ duration: 0.6, delay: 0.45 }}
+          className="mt-14"
         >
-          <div className="relative mx-auto max-w-4xl bg-surface rounded-[2.5rem] p-4 sm:p-6 shadow-xl border border-clayDark/5 overflow-hidden">
-            {/* Background Pastel Glow */}
-            <div className="absolute -top-20 -right-20 w-64 h-64 bg-sunshine/25 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-watermelon/15 rounded-full blur-3xl pointer-events-none" />
-            
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div className="bg-surface rounded-3xl p-6 sm:p-8 border border-clayDark/10 shadow-sm">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
               {/* Left text highlight */}
-              <div className="md:col-span-5 flex flex-col justify-center space-y-4 p-2 sm:p-4 text-left">
-                <div className="inline-flex items-center gap-2 text-watermelon font-bold text-sm">
-                  <Heart className="w-4 h-4 fill-watermelon" />
-                  <span>Jouw Creatieve Me-Time of Date Night</span>
-                </div>
-                <h3 className="font-fredoka text-2xl sm:text-3xl text-clayDark leading-snug">
+              <div className="md:col-span-5 space-y-4 text-left">
+                <h2 className="font-fredoka text-2xl sm:text-3xl text-clayDark leading-snug">
                   Haal de studiobeleving naar jouw huiskamer.
-                </h3>
+                </h2>
                 <p className="text-graphite text-sm sm:text-base leading-relaxed">
-                  Kies jouw favoriete biscuit keramiek, schilder met onze veilige Mayco glazuren en breng alles terug naar Duffel. Wij verzorgen het professionele glazuur- en ovenproces!
+                  Kies jouw favoriete biscuit keramiek, schilder met onze veilige Mayco glazuren en breng alles terug naar Duffel. Wij verzorgen het professionele glazuur- en ovenproces.
                 </p>
-                <div className="pt-2">
+                <div className="pt-1">
                   <a 
                     href="#over-ons" 
-                    className="inline-flex items-center text-sm font-semibold text-rind hover:text-rind-hover underline underline-offset-4"
+                    className="inline-flex items-center text-sm font-semibold text-rind hover:text-rind-hover transition-colors"
                   >
-                    Ontdek het verhaal achter karpouzi keramiek &rarr;
+                    Ontdek meer over karpouzi keramiek &rarr;
                   </a>
                 </div>
               </div>
 
               {/* Right visuals */}
               <div className="md:col-span-7 grid grid-cols-2 gap-4">
-                <div className="relative group overflow-hidden rounded-3xl shadow-md bg-canvas">
+                <div className="overflow-hidden rounded-2xl bg-canvas">
                   <img 
                     src="/images/10.png" 
-                    alt="Handgeschilderd keramiek met karpouzi keramiek" 
-                    className="w-full h-52 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                    alt="Handgeschilderd keramiek" 
+                    className="w-full h-48 sm:h-60 object-cover"
                     loading="eager"
                   />
-                  <div className="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-clayDark shadow-xs">
-                    Kleurrijke Resultaten
-                  </div>
                 </div>
 
-                <div className="relative group overflow-hidden rounded-3xl shadow-md bg-canvas">
+                <div className="overflow-hidden rounded-2xl bg-canvas">
                   <img 
                     src="/images/11.png" 
-                    alt="Unieke DIY keramiek voorbeelden" 
-                    className="w-full h-52 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                    alt="Glanzend afgebakken keramiek" 
+                    className="w-full h-48 sm:h-60 object-cover"
                     loading="eager"
                   />
-                  <div className="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-clayDark shadow-xs">
-                    Glanzend Afgebakken
-                  </div>
                 </div>
               </div>
             </div>
