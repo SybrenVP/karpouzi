@@ -46,3 +46,27 @@
 .seed-shape {
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 }
+
+/* Subtle gentle floating animation for watermelon seeds background */
+@keyframes floatSeed {
+  0% {
+    transform: translateY(0px) rotate(var(--seed-rot, 0deg));
+  }
+  50% {
+    transform: translateY(-7px) rotate(calc(var(--seed-rot, 0deg) + 3deg));
+  }
+  100% {
+    transform: translateY(0px) rotate(var(--seed-rot, 0deg));
+  }
+}
+
+.animate-seed-float {
+  animation: floatSeed var(--seed-duration, 9s) ease-in-out infinite;
+  animation-delay: var(--seed-delay, 0s);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-seed-float {
+    animation: none !important;
+  }
+}

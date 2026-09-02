@@ -7,26 +7,25 @@ export const Navbar: React.FC = () => {
 
   const navLinks = [
     { label: 'Over Ons', href: '#over-ons' },
-    { label: 'Evenementen', href: '#evenementen' },
     { label: 'Contact & Afhalen', href: '#contact' },
   ];
 
   return (
-    <header className="sticky top-4 z-50 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+    <header className="sticky top-4 z-50 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full">
       <motion.nav 
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
-        className="backdrop-blur-md bg-surface/90 border border-clayDark/10 rounded-full px-6 py-3.5 shadow-sm flex items-center justify-between transition-all"
+        className="backdrop-blur-md bg-surface/90 border border-clayDark/10 rounded-full px-6 py-3.5 shadow-sm flex items-center justify-between gap-8 transition-all"
         aria-label="Hoofdnavigatie"
       >
-        {/* Brand Logo */}
+        {/* Brand Logo / Home Button */}
         <a 
           href="#" 
-          className="group flex items-center gap-2.5 focus:outline-none rounded-full"
+          className="group flex items-center gap-2.5 focus:outline-none rounded-full flex-shrink-0"
         >
-          <span className="font-fredoka text-xl sm:text-2xl font-bold tracking-tight text-clayDark group-hover:text-watermelon transition-colors">
-            karpouzi <span className="text-rind font-normal text-lg sm:text-xl">keramiek</span>
+          <span className="font-fredoka text-xl sm:text-2xl text-rind tracking-tight group-hover:text-watermelon transition-colors">
+            karpouzi
           </span>
         </a>
 

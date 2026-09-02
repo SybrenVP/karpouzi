@@ -24,21 +24,21 @@ export const ContactFooter: React.FC = () => {
   };
 
   return (
-    <footer id="contact" className="pt-20 pb-12 bg-canvas scroll-mt-20">
+    <footer id="contact" className="pt-10 md:pt-14 pb-10 bg-canvas scroll-mt-20">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-14">
+        <div className="text-center max-w-2xl mx-auto mb-8">
           <h2 className="font-fredoka text-3xl sm:text-4xl md:text-5xl text-clayDark">
             Neem Contact Op
           </h2>
-          <p className="text-graphite text-sm mt-2">
+          <p className="text-graphite text-sm mt-1.5">
             Vragen over DIY boxen of workshops in Duffel? We helpen je graag verder.
           </p>
         </div>
 
         {/* 2-Column Contact Info + Form */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-10">
           
           {/* Left Info Column */}
           <div className="lg:col-span-5 space-y-6">

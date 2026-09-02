@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative pt-16 pb-20 md:pt-20 md:pb-28">
+    <section className="relative pt-8 pb-10 md:pt-12 md:pb-14">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Headlines Section */}
@@ -22,7 +22,7 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.15 }}
-            className="font-caveat text-rind text-2xl sm:text-3xl md:text-4xl font-bold mt-4 mb-8"
+            className="font-caveat text-rind text-2xl sm:text-3xl md:text-4xl font-bold mt-3 mb-6"
           >
             “Waar creativiteit en gezelligheid belangrijker zijn dan perfectie!”
           </motion.p>
@@ -32,36 +32,16 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.25 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10"
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8"
           >
             <a
               href="#contact"
-              className="w-full sm:w-auto inline-flex items-center justify-center bg-watermelon hover:bg-watermelon-hover text-white font-sans text-base font-semibold px-7 py-3.5 rounded-full transition-colors shadow-sm"
+              className="w-full sm:w-auto inline-flex items-center justify-center bg-watermelon hover:bg-watermelon-hover text-white font-sans text-base font-semibold px-7 py-3 rounded-full transition-colors shadow-sm"
             >
-              Huur een Box
-            </a>
-
-            <a
-              href="#evenementen"
-              className="w-full sm:w-auto inline-flex items-center justify-center bg-surface hover:bg-canvas text-clayDark font-sans text-base font-medium px-6 py-3.5 rounded-full border border-clayDark/10 transition-colors"
-            >
-              Bekijk Workshops
+              Huur een box
             </a>
           </motion.div>
 
-          {/* Minimalist Trust Features */}
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.35 }}
-            className="flex flex-wrap items-center justify-center gap-y-2 gap-x-6 text-xs sm:text-sm text-graphite font-medium"
-          >
-            <span>Ophalen in Duffel</span>
-            <span className="hidden sm:inline text-clayDark/20">•</span>
-            <span>Alles-in-1 DIY Box</span>
-            <span className="hidden sm:inline text-clayDark/20">•</span>
-            <span>Inclusief Professioneel Afbakken</span>
-          </motion.div>
         </div>
 
         {/* Visual Banner Showcase */}
@@ -69,7 +49,7 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.45 }}
-          className="mt-14"
+          className="mt-8"
         >
           <div className="bg-surface rounded-3xl p-6 sm:p-8 border border-clayDark/10 shadow-sm">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
@@ -79,7 +59,7 @@ export const Hero: React.FC = () => {
                   Haal de studiobeleving naar jouw huiskamer.
                 </h2>
                 <p className="text-graphite text-sm sm:text-base leading-relaxed">
-                  Kies jouw favoriete biscuit keramiek, schilder met onze veilige Mayco glazuren en breng alles terug naar Duffel. Wij verzorgen het professionele glazuur- en ovenproces.
+                  Kies jouw favoriete biscuit keramiek, schilder met onze vaatwasser veilige glazuren en breng alles terug naar ons. Wij verzorgen het professionele glazuur- en ovenproces.
                 </p>
                 <div className="pt-1">
                   <a 

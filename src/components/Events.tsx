@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Clock, MapPin, Users } from 'lucide-react';
+import { Clock, MapPin } from 'lucide-react';
 import { EventItem } from '../types';
 import { EventModal } from './EventModal';
 
