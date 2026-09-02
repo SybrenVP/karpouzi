@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Outer Rind Green Dark -->
+  <path d="M 10 30 A 42 42 0 0 0 90 30 Z" fill="#228653" />
+  <!-- Inner Rind Light Green / Mint -->
+  <path d="M 15 30 A 37 37 0 0 0 85 30 Z" fill="#A3EBB1" />
+  <!-- Juicy Watermelon Flesh Pink/Coral Red -->
+  <path d="M 19 30 A 33 33 0 0 0 81 30 Z" fill="#F04C63" />
+  <!-- Seeds -->
+  <circle cx="34" cy="38" r="2.5" fill="#1F2421" />
+  <circle cx="50" cy="45" r="2.5" fill="#1F2421" />
+  <circle cx="66" cy="38" r="2.5" fill="#1F2421" />
+  <circle cx="42" cy="54" r="2.2" fill="#1F2421" />
+  <circle cx="58" cy="54" r="2.2" fill="#1F2421" />
+  <!-- Glaze shine highlight -->
+  <ellipse cx="32" cy="32" rx="4" ry="2" fill="#FFFFFF" opacity="0.6" transform="rotate(-15 32 32)" />
+</svg>
