@@ -1,0 +1,20 @@
+Fonts
+H1 - Fredoka
+quotes - Garet
+secondary quotes - Caveat
+normal text - VAG Rounded Next
+
+Font Colours
+H1 - #F45B4F
+Quotes using Garet - #3A3A3A
+Quotes using Caveat - #4166F5
+normal text - #555555
+
+Background Colour - #F8F3EC
+
+Different Confetti Colours
+#F6D75A
+#4166F5
+#F4B6C8
+#F45B4F
+#C8B6E8
